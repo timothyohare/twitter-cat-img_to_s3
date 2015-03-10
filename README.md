@@ -8,9 +8,9 @@ To run it
 2. `$ python ./cat_twitter_img_to_s3.py`
 3. It will start one process to read and parse the Twitter stream
 4. Once it finds supposed cat pictures (matching 'cat' text in the tweet) it will add the URL to a queue
-5. Another process will pull that img URL off the queue, download it in to local memory and upload it to your S3 bucket
+5. Another process will pull that img URL off the queue, download the image in to local memory and upload it to your S3 bucket
 
-Having seperate processes stops the Twitter Stream feed api from blocking
+Having a seperate process stops the Twitter Stream api from blocking
 ## Creating an index.html of your cat images
 
 It is possible to use your AWS S3 bucket as a static website. Besides some configuration, it needs an index.html file.
