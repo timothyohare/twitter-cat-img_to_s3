@@ -1,0 +1,15 @@
+<html>
+<head>
+S3 Images
+</head>
+<body>
+
+
+<h1>Images</h1>
+    {% for filename in filenames %}
+        <img src="{{ aws_bucket_url }}{{ filename.name }}" alt="pic" height="100" width="100">
+        <a href="{{ aws_bucket_url }}{{ filename.name }}">
+        {{ filename.name }}</a>
+    {% endfor %}
+</body>
+</html>
